@@ -13,6 +13,7 @@ export default function Navbar() {
           <a
             href="https://twitter.com/mrcvvssr"
             target="_blank"
+            rel="noopener noreferrer"
             className="font-semibold text-sky-400 hover:text-sky-500"
           >
             Twitter
