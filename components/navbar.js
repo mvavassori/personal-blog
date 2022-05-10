@@ -5,13 +5,13 @@ export default function Navbar() {
     <nav className="relative container p-5 mx-auto ">
       <div className="flex items-center justify-between ">
         <Link href="/">
-          <a className="font-extrabold hover:text-gray-600 dark:hover:text-gray-300">
+          <a className="font-extrabold hover:text-indigo-600 dark:hover:text-indigo-400">
             Home
           </a>
         </Link>
         <div className="md:flex space-x-6 ">
           <a
-            href="https://twitter.com/usernamedmarco"
+            href="https://twitter.com/mrcvvssr"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-sky-400 hover:text-sky-500"

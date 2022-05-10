@@ -1,5 +1,6 @@
 ---
 title: "Primo Post"
+excerpt: "this is a small summary of the entire blog post, let's see if it shows up under the post title"
 date: "2022-04-21"
 ---
 
