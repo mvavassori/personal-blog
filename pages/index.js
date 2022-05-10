@@ -32,17 +32,17 @@ export default function Home({ allPostsData }) {
                   {title}
                 </a>
               </Link>
-              <p className="text-gray-400 mt-1">{excerpt}</p>
+              <p className="text-gray-400 text-lg mt-3">{excerpt}</p>
               {/* <br /> */}
-              <small>
+              <small className="text-gray-400">
                 <Date dateString={date} />
               </small>
             </li>
           ))}
         </ul>
       </section>
-      <hr />
-      <div className="my-10">
+      {/* <hr /> */}
+      {/* <div className="my-10">
         <h2 className="my-3 text-xl font-semibold">What is it about?</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -71,7 +71,7 @@ export default function Home({ allPostsData }) {
           fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
           accusantium nemo autem.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
