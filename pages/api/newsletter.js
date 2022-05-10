@@ -4,7 +4,7 @@ function getRequestParams(email) {
   // mailchimp datacenter - mailchimp api keys always look like this:
   // fe4f064432e4684878063s83121e4971-us6
 
-  const url = `https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members`;
+  const url = `https://${process.env.MAILCHIMP_DATACENTER}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members`;
 
   // Add aditional params here. See full list of available params:
   // https://mailchimp.com/developer/reference/lists/list-members/
@@ -15,7 +15,7 @@ function getRequestParams(email) {
 
   // Api key needs to be encoded in base 64 format
   const base64ApiKey = Buffer.from(
-    `key:${process.env.MAILCHIMP_API_KEY}`
+    `anystring:${process.env.MAILCHIMP_API_KEY}`
   ).toString("base64");
   const headers = {
     "Content-Type": "application/json",
@@ -23,6 +23,7 @@ function getRequestParams(email) {
   };
 
   return {
+    //return everything i'm sending
     url,
     data,
     headers,

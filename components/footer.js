@@ -12,6 +12,7 @@ export default function Footer() {
     try {
       const response = await axios.post("/api/newsletter", { email });
       setState("SUCCESS");
+      setEmail("");
     } catch (e) {
       setErrorMessage(e.response.data.error);
       setState("ERROR");
