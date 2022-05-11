@@ -1,5 +1,5 @@
 import axios from "axios";
-const cors = require("cors");
+import cors from "cors";
 
 app.use(cors());
 
