@@ -1,7 +1,4 @@
 import axios from "axios";
-import cors from "cors";
-
-app.use(cors());
 
 function getRequestParams(email) {
   // mailchimp datacenter - mailchimp api keys always look like this:
