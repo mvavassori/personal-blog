@@ -19,6 +19,7 @@ function getRequestParams(email) {
   ).toString("base64");
   const headers = {
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
     Authorization: `Basic ${base64ApiKey}`,
   };
 
