@@ -70,7 +70,7 @@ export default async (req, res) => {
   try {
     const { url, data, headers } = getRequestParams(email);
 
-    await cors(req, res);
+    await runMiddleware(req, res, cors);
 
     const response = await axios.post(url, data, { headers });
 
