@@ -45,21 +45,11 @@ export default async (req, res) => {
     const response = await axios.post(url, data, { headers });
 
     // Success
-    // Website you wish to allow to connect
-    res.setHeader(
-      "Access-Control-Allow-Origin",
-      "https://www.marcovavassori.com/"
-    );
-
-    // Request methods you wish to allow
-    res.setHeader(
-      "Access-Control-Allow-Methods",
-      "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-    );
     return res.status(201).json({ error: null });
   } catch (error) {
     return res.status(400).json({
-      error: `Oops, something went wrong... Send me an email at marcovavassori.mv@gmail.com and I'll add you to the list.`,
+      // error: `Oops, something went wrong... Send me an email at marcovavassori.mv@gmail.com and I'll add you to the list.`,
+      error,
     });
 
     // Report error to Sentry or whatever
