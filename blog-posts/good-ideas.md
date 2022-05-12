@@ -23,11 +23,11 @@ This way you're exempt from the most common paradox in the startup world: soluti
 
 &nbsp;
 
-If you can't come up with good ideas "organically", you must find out what _problems_ other people are facing, again, this approach is not the preferred but sometimes you're forced to come up with good ideas either because you don't have time or because your mind isn't prepared to do so, don't worry, there are mainly 2 other ways to come up with good ideas:
+If you can't come up with good ideas "organically", you must find out what _problems_ other people are facing, again, this approach is not preferred but sometimes you're forced to come up with good ideas either because you don't have time or because your mind isn't prepared to do so, don't worry, there are mainly 2 other ways to come up with good ideas:
 
 &nbsp;
 
-Another way to find good ideas to work on is by "**cold-asking**" a certain category of people (i.e. lawyers, doctors, plumbers, etc...) what's the most (again) annoying/difficult/expensive both in time and/or money thing they have to do in their profession. Once you have a small sample of replies from a certain category (let's say around 40/50) you should have an initital understanding of what are the most common problems they have to deal with daily and based on that you can decide which problem is the most **urgent**.
+Another way to find good ideas to work on is by "**cold-asking**" a certain category of people (i.e. lawyers, doctors, plumbers, etc...) what's the most (again) annoying/difficult/expensive both in time and/or money thing they have to do in their profession. Once you have a small sample of replies from a certain category (let's say around 40/50) you should have an initial understanding of what are the most common problems they have to deal with daily and based on that you can decide which problem is the most **urgent**.
 
 &nbsp;
 
