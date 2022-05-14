@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
+        id="gtm-script"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
       />
