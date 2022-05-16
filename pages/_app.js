@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-3DYECJJTT7`} //${process.env.GOOGLE_ANALYTICS_ID}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} //
       />
 
       <Script id="gtm-script" strategy="afterInteractive">
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-3DYECJJTT7');
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
         `}
       </Script>
 
