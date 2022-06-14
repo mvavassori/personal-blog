@@ -20,7 +20,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-indigo-600 dark:bg-indigo-800 mt-4">
+    <div className="bg-indigo-600 dark:bg-indigo-800 mt-4 absolute bottom-0 w-full">
       <div className="text-center text-white container mx-auto p-5">
         <div className="mb-8 mt-4">
           <div className="block mb-2 text-sm font-medium text-white ">
