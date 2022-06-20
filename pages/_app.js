@@ -3,8 +3,11 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Script from "next/script";
+import { useRouter } from 'next/router'
+
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <>
       <Script
@@ -25,11 +28,15 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/image/favicon.ico" />
       </Head>
 
-      <div className="dark:bg-slate-900 dark:text-white">
+      <div className="dark:bg-slate-900 dark:text-white flex flex-col min-h-screen">
         <Navbar />
         <hr />
-        <Component {...pageProps} />
-        <Footer />
+        <Component {...pageProps} className="flex-grow"/>
+        <footer className={
+            (router.pathname === '/' ? "w-full absolute bottom-0" : {})
+          }>
+          <Footer />
+        </footer>
       </div>
     </>
   );
