@@ -26,7 +26,8 @@ export default function Home({ allPostsData }) {
         {/* <h1 className="mt-8 mb-6 text-2xl font-bold">Blog posts</h1> */}
         <ul>
           {allPostsData.map(({ title, excerpt, date, id }) => (
-            <li key={id} className="my-7">
+
+            <li key={id} className="my-7 bg-indigo-100 dark:bg-slate-800 rounded-lg p-2">
               <Link href={`/posts/${id}`}>
                 <a className="my-1 text-xl font-bold hover:text-indigo-600 dark:hover:text-indigo-400 underline">
                   {title}
@@ -38,6 +39,7 @@ export default function Home({ allPostsData }) {
                 <Date dateString={date} />
               </small>
             </li>
+            
           ))}
         </ul>
       </section>
