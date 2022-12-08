@@ -19,15 +19,17 @@ export default function Home({ allPostsData }) {
         <title>Marco Vavassori</title>
       </Head>
       <h1 className="mt-12 mb-20 text-3xl font-extrabold">
-        Hi there, welcome to my blog!👋
+        Welcome to my website 👋
       </h1>
       <hr />
       <section className="my-6">
-        {/* <h1 className="mt-8 mb-6 text-2xl font-bold">Blog posts</h1> */}
+        <h2 className="mt-8 mb-6 text-xl font-bold">Latest posts</h2>
         <ul>
           {allPostsData.map(({ title, excerpt, date, id }) => (
-
-            <li key={id} className="my-7 bg-indigo-100 dark:bg-slate-800 rounded-lg p-2">
+            <li
+              key={id}
+              className="my-7 bg-indigo-100 dark:bg-slate-800 rounded-lg p-2"
+            >
               <Link href={`/posts/${id}`}>
                 <a className="my-1 text-xl font-bold hover:text-indigo-600 dark:hover:text-indigo-400 underline">
                   {title}
@@ -39,41 +41,9 @@ export default function Home({ allPostsData }) {
                 <Date dateString={date} />
               </small>
             </li>
-            
           ))}
         </ul>
       </section>
-      {/* <hr /> */}
-      {/* <div className="my-10">
-        <h2 className="my-3 text-xl font-semibold">What is it about?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem.
-        </p>
-      </div>
-      <div className="my-10">
-        <h2 className="my-3 text-xl font-semibold">Who am i?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem.
-        </p>
-      </div>
-      <div className="my-10">
-        <h2 className="my-3 text-xl font-semibold">Why?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem.
-        </p>
-      </div> */}
     </div>
   );
 }

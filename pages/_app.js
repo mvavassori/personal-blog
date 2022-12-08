@@ -3,11 +3,10 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Script from "next/script";
-import { useRouter } from 'next/router'
-
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <Script
@@ -31,10 +30,12 @@ function MyApp({ Component, pageProps }) {
       <div className="dark:bg-slate-900 dark:text-white flex flex-col min-h-screen">
         <Navbar />
         <hr />
-        <Component {...pageProps} className="flex-grow"/>
-        <footer className={
-            (router.pathname === '/' ? "w-full absolute bottom-0" : {})
-          }>
+        <Component {...pageProps} className="flex-grow" />
+        <footer
+        // className={
+        //     (router.pathname === '/' ? "w-full absolute bottom-0" : {})
+        //   }
+        >
           <Footer />
         </footer>
       </div>
