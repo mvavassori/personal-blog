@@ -32,9 +32,7 @@ function MyApp({ Component, pageProps }) {
         <hr />
         <Component {...pageProps} className="flex-grow" />
         <footer
-        // className={
-        //     (router.pathname === '/' ? "w-full absolute bottom-0" : {})
-        //   }
+        // className={router.pathname === "/" ? "w-full absolute bottom-0" : {}}
         >
           <Footer />
         </footer>

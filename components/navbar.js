@@ -11,7 +11,7 @@ export default function Navbar() {
         </Link>
         <div className="md:flex space-x-6 ">
           <a
-            href="https://twitter.com/marcovvssr"
+            href="https://twitter.com/mrcvavassori"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-sky-400 hover:text-sky-500"
