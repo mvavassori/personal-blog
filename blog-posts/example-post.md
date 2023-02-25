@@ -4,4 +4,4 @@ excerpt: "Example excerpt"
 date: "2023-02-25"
 ---
 
-Example text
+Example content
