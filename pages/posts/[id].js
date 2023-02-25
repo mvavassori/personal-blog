@@ -1,12 +1,10 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
-// import Layout from '../../components/layout'
 import Head from "next/head";
 import Date from "../../components/date";
-// import utilStyles from '../../styles/utils.module.css'
 
 export async function getStaticPaths() {
   //gets markwdown posts ids
-  const paths = getAllPostIds();
+  const paths = getAllPostIds() || [];
   return {
     paths,
     fallback: false, // If fallback is false, then any paths not returned by getStaticPaths will result in a 404 page.
