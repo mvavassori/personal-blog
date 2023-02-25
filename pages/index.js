@@ -7,7 +7,7 @@ export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData,
+      allPostsData: allPostsData || [],
     },
   };
 }
@@ -24,6 +24,9 @@ export default function Home({ allPostsData }) {
       <hr />
       <section className="my-6">
         <h2 className="mt-8 mb-6 text-xl font-bold">Latest posts</h2>
+        {allPostsData.length === 0 ? (
+          <p>No posts yet...</p>
+        ) : (
         <ul>
           {allPostsData.map(({ title, excerpt, date, id }) => (
             <li
@@ -43,6 +46,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        )}
       </section>
     </div>
   );
