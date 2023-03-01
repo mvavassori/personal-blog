@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
                   {title}
                 </a>
               </Link>
-              <p className="text-gray-400 text-lg mt-3">{excerpt}</p>
+              <p className="text-gray-400 text-lg mt-1">{excerpt}</p>
               {/* <br /> */}
               <small className="text-gray-400">
                 <Date dateString={date} />
