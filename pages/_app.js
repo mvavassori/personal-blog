@@ -30,10 +30,10 @@ function MyApp({ Component, pageProps }) {
       <div className="dark:bg-slate-900 dark:text-white flex flex-col min-h-screen">
         <Navbar />
         <hr />
-        <Component {...pageProps} className="flex-grow" />
-        <footer
-        // className={router.pathname === "/" ? "w-full absolute bottom-0" : {}}
-        >
+        <div className="flex-grow">
+          <Component {...pageProps} className="flex-grow" />
+        </div>
+        <footer>
           <Footer />
         </footer>
       </div>
@@ -42,3 +42,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+// className={router.pathname === "/" ? "w-full absolute bottom-0" : {}}
