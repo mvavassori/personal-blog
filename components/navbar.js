@@ -11,6 +11,14 @@ export default function Navbar() {
         </Link>
         <div className="md:flex space-x-6 ">
           <a
+            href="https://github.com/mvavassori"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-zinc-900 hover:text-black dark:text-white dark:hover:text-zinc-100"
+          >
+            GitHub
+          </a>
+          <a
             href="https://twitter.com/marcovvssr"
             target="_blank"
             rel="noopener noreferrer"
