@@ -14,7 +14,7 @@ export default function Navbar() {
             href="https://github.com/mvavassori"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-zinc-900 hover:text-black dark:text-white dark:hover:text-zinc-100"
+            className="font-semibold text-zinc-800 hover:text-black dark:text-white dark:hover:text-zinc-300"
           >
             GitHub
           </a>
