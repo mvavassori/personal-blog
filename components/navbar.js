@@ -6,10 +6,10 @@ export default function Navbar() {
       <div className="flex items-center justify-between ">
         <Link href="/">
           <a className="font-extrabold hover:text-indigo-600 dark:hover:text-indigo-400">
-            Home
+            Marco Vavassori
           </a>
         </Link>
-        <div className="md:flex space-x-6 ">
+        <div className="md:flex space-x-6 text-xs">
           <a
             href="https://github.com/mvavassori"
             target="_blank"
