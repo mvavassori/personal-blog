@@ -19,7 +19,7 @@ export default function Navbar() {
             GitHub
           </a>
           <a
-            href="https://twitter.com/marcovvssr"
+            href="https://twitter.com/mvavassori_x"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-sky-400 hover:text-sky-500"
