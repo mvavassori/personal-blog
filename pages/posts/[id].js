@@ -29,13 +29,13 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article className="container mx-auto p-5 mb-12">
-        <h1 className="mt-8 text-3xl font-bold ">{postData.title}</h1>
+        <h1 className="mt-8 text-5xl font-bold">{postData.title}</h1>
         <div className="mt-1 mb-7">
           <small>
             <Date dateString={postData.date} />
           </small>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="prose prose-xl prose-gray dark:prose-invert" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </>
   );
